@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #ff004f;
+}
+:root{
+    --primary: #fffdd0;
+    --secondary: #222;
+}
+.dark-theme {
+    --primary: #222;
+    --secondary: #fffdd0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--primary);
+}
+.container{
+    position: relative;
+}
+#icon{
+    width: 30px;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 10px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.left{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #00008f;
+    position: absolute;
+    left: -100px;
+    z-index: -20;
+}
+.right{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #00008f;
+    position: absolute;
+    right: -100px;
+    z-index: -20;
+}
+.clock h1{
+    position: absolute;
+    top: 100px;
+}
+.clock h2 {
+    position: absolute;
+    bottom: 100px;
+}
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 20px;
+    text-align: center;
+}
+.clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 30px;
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    z-index: 2;
+}
+.hand i{
+    position: absolute;
+    background-color: var(--clr);
+    width: var(--w);
+    height: var(--h);
+    border-radius: 8px;
+}
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
