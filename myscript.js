@@ -29,8 +29,10 @@ var icon = document.getElementById("icon");
 icon.onclick = function() {
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
-        icon.src = "images/sun.png";
+        icon.src = "images/sun.ico";
+        document.querySelector('.logo').src = "images/logo-2.png";
     } else {
         icon.src = "images/moon.png";
+        document.querySelector('.logo').src = "images/logo-1.png";
     }
 }
