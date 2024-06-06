@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    color: #4f76f6;
+    font-family: serif;
+    color: #6660ff;
 }
 :root{
-    --primary: #f9f9f9;
-    --secondary: #1f2b37;
+    --primary: #ffffff;
+    --secondary: #000600;
 }
 .dark-theme {
-    --primary: #1f2b37;
-    --secondary: #f9f9f9;
+    --primary: #000610;
+    --secondary: #ffffff;
 }
 body{
     display: flex;
@@ -27,7 +27,7 @@ body{
     position: absolute;
     top: 2%;
     left: 2%;
-    width: 100px;
+    width: 50px;
 }
 #icon{
     width: 25px;
@@ -52,7 +52,7 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: #4f76f6;
+    background: #6660ff;
     position: absolute;
     left: -100px;
     z-index: -20;
@@ -62,7 +62,7 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: #4f76f6;
+    background: #6660ff;
     position: absolute;
     right: -100px;
     z-index: -20;
