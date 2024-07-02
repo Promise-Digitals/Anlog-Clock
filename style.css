@@ -7,10 +7,10 @@
 }
 :root{
     --primary: #ffffff;
-    --secondary: #000600;
+    --secondary: #181818;
 }
 .dark-theme {
-    --primary: #000610;
+    --primary: #181818;
     --secondary: #ffffff;
 }
 body{
@@ -27,7 +27,7 @@ body{
     position: absolute;
     top: 2%;
     left: 2%;
-    width: 50px;
+    width: 40px;
 }
 #icon{
     width: 25px;
